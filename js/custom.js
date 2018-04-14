@@ -15,7 +15,7 @@ $(document).ready(function(){
 		});
 		 
 		$('.scrollup').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 600);
+		$("html, body").animate({ scrollTop: 0 }, 2000);
 		return false;
 	});
 
@@ -37,11 +37,12 @@ $(document).ready(function(){
 
 });
 
-	/* scroll down button */
-	function slowScroll(id){
-		var offset = 0;
-		$('html, body').animate({
-			scrollTop: $(id).offset ().top - offset
-		}, 2000);
-		return false;
-	}
+
+/* scroll down button */
+function slowScroll(id){
+	var offset = 0;
+	$('html, body').animate({
+		scrollTop: $(id).offset ().top - offset
+	}, 2000);
+	return false;
+}
