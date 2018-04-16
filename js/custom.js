@@ -1,9 +1,27 @@
 $(document).ready(function(){
-	/* tabs */
+	/* tabs jquery */
 	$( function() {
     	$( "#tabs_1" ).tabs();
     	$( "#tabs_2" ).tabs();
   	} );
+
+	/* hidden block1 jquery */
+  	$(".hider").click(function(){
+        $("#hidden").slideToggle("slow");
+        return false;
+    });
+
+    /* hidden block2 jquery */
+  	$(".hider2").click(function(){
+        $("#hidden2").slideToggle("slow");
+        return false;
+    });
+
+     /* hidden block3 jquery */
+  	$(".hider3").click(function(){
+        $("#hidden3").slideToggle("slow");
+        return false;
+    });
 
 	/* scroll up button */
   	$(window).scroll(function(){

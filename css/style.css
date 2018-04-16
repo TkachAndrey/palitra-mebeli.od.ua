@@ -13,7 +13,7 @@ html, body{
 			/* HEADER*/
 
 .wrapper{
-	background-color: rgba(105, 105, 10, 0.3);
+	background-color: #d39f6f;
 	background-image: url("../img/bg_header.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -46,9 +46,9 @@ html, body{
 	left: 0px;
 }
 
-.logo a{
+.logo img{
 	width: 80px;
-	height: 120px;
+	height: 80px;
 }
 
 .menu{
@@ -90,7 +90,8 @@ html, body{
 	font: 28px/42px  Merriweather, serif;
 	font-weight: 200;
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .header_arrow{
@@ -196,7 +197,7 @@ html, body{
 
 
 
-			/* PALITRA*/
+			/* MAIN BLOCK*/
 
 .main{
 	padding-top: 50px;
@@ -219,6 +220,7 @@ html, body{
 	margin-right: 5px;
 	border: 2px solid #000;
 	text-align: center;
+	width: 360px;
 }
 
 .block a{
@@ -231,12 +233,22 @@ html, body{
 	padding: 2px;
 }
 
+
 .block a h3{
 	color: #000000;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: normal;
 }
+
+#hidden, #hidden2, #hidden3{
+	display: none;
+}
+
+.main .flex-container{
+	align-items: flex-start;
+}
+
 
 		/*END OF PALITRA*/
 
@@ -248,6 +260,10 @@ html, body{
 	padding-bottom: 50px;
 	background-image: url(../img/bg_footer.jpg);
 	border-bottom: 2px solid #000;
+}
+
+.my_works .flex-container{
+	align-items: stretch;
 }
 
 #tabs_1, #tabs_2{
@@ -362,9 +378,11 @@ i.fa-envelope:hover{
 }
 
 .button{
+	font-size: 23px;
 	font-weight: 700;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
+	background-color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1.6px;
 	display: inline-block;
@@ -377,7 +395,7 @@ i.fa-envelope:hover{
 }
 
 .button:hover{
-	color: #000;
+	color: red;
 	background-color: #fff;
 	border: 2px solid #fff;
 }
@@ -494,7 +512,10 @@ i.fa-envelope:hover{
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
-
+	
+	.button{
+		font-size: 16px;
+	}
 	
 
 }
@@ -528,14 +549,14 @@ i.fa-envelope:hover{
 	
 	.header_title{
 		font-size: 36px;
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 
 	.header_slogan{
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 50px;
+		margin-top: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
@@ -813,7 +834,7 @@ i.fa-envelope:hover{
 		margin-left: 5px;
 		margin-top: 5px;
 		width: 40px;
-		height: 60px;
+		height: 40px;
 	}
 	
 	.menu{
@@ -827,17 +848,18 @@ i.fa-envelope:hover{
 	}
 	
 	.header_title{
-		font-size: 38px;
-		margin-top: 10px;
+		font-size: 26px;
+		margin-top: 0px;
 	}
 
 	.header_slogan{
 		font-size: 16px;
 		line-height: 1.5;
-		margin-top: 20px;
+		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
+		margin-bottom: 0;
 	}
 
 	.header_arrow{
@@ -903,7 +925,7 @@ i.fa-envelope:hover{
 	}
 	
 	.button{
-		font-size: 18px;
+		font-size: 12px;
 	}
 }
 
