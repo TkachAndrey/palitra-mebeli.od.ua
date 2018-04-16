@@ -23,6 +23,8 @@ $(document).ready(function(){
         return false;
     });
 
+
+
 	/* scroll up button */
   	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
@@ -36,6 +38,17 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: 0 }, 2000);
 		return false;
 	});
+
+	/* animation for form */
+	$(".mat-input").focus(function(){
+	  $(this).parent().addClass("is-active is-completed");
+	});
+
+	$(".mat-input").focusout(function(){
+	  if($(this).val() === "")
+	    $(this).parent().removeClass("is-completed");
+	  $(this).parent().removeClass("is-active");
+	})
 
 
 
@@ -64,3 +77,4 @@ function slowScroll(id){
 	}, 2000);
 	return false;
 }
+

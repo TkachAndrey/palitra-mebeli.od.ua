@@ -182,10 +182,9 @@ html, body{
 
 .flex-container{
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
 }
 
 .flex-element{
@@ -245,15 +244,139 @@ html, body{
 	display: none;
 }
 
-.main .flex-container{
-	align-items: flex-start;
+#hidden p, #hidden2 p{
+	text-align: justify;
+	text-indent: 1.5em;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#hidden3 ol{
+	text-align: left;
 }
 
 
-		/*END OF PALITRA*/
+	/* form */
+form{
+	padding-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+form h4{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+/*
+form p{
+	margin-top: 0px;
+}
+
+form input[type=text]{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 10px;
+	background: #d8c5aa;
+}
+
+form input[type=tel]{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 30px;
+	background: #d8c5aa;
+}
+
+form input[type=submit], form input[type=reset]{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 30px;
+	color: #fff;
+	background: linear-gradient(to top, #d8c5aa, #847162);
+}
+
+form input[type=submit]:hover, form input[type=reset]:hover{
+	background: linear-gradient(to top,#5c483f, #d8c5aa );
+}
+	form */
+
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.mat-div {
+  padding: 10px 0 0 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.mat-div:after, .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff; 
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  background-color: #5c483f;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: #5c483f;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.buttonForm {
+  background: linear-gradient(to top, #d8c5aa, #847162);
+  border: none;
+  display: block;
+  margin: 25px auto;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonForm:hover {
+  background: linear-gradient(to top, #847162, #d8c5aa);
+}
+
+		/*END OF MAIN BLOCK*/
 
 
 		/* MY WORKS*/
+
 
 .my_works{
 	padding-top: 50px;
@@ -272,7 +395,7 @@ html, body{
 	border: 2px solid #000;
 }
 
-#tabs-1, #tabs-2{
+#tabs-1, #tabs-2, #tabs-3{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -354,6 +477,7 @@ i.fa-envelope:hover{
 .address{
 	font-size: 20px;
 	font-weight: 400;
+	margin-top: 0;
 }
 
 .e-mail{
@@ -373,7 +497,6 @@ i.fa-envelope:hover{
 }
 
 .phoneNumber{
-	margin-top: 25px;
 	text-align: center;
 }
 
@@ -424,7 +547,6 @@ i.fa-envelope:hover{
 /* MEDIA*/
 
 
-
 @media(min-width: 0px) and (max-width: 319px) {
 	
 	.container{
@@ -439,6 +561,10 @@ i.fa-envelope:hover{
 		width: 40px;
 		height: 60px;
 		margin-left: 5px;
+	}
+	.menu{
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.menu li a{
@@ -480,8 +606,17 @@ i.fa-envelope:hover{
 		padding-bottom: 10px;
 	}
 
-	img{
+	.block{
+		width: 280px;
+	}
+
+	.block img{
 		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 48px;
+		height: 48px;
 	}
 
 	h3{
@@ -516,8 +651,6 @@ i.fa-envelope:hover{
 	.button{
 		font-size: 16px;
 	}
-	
-
 }
 
 
@@ -583,8 +716,22 @@ i.fa-envelope:hover{
 		padding-bottom: 10px;
 	}
 
+	.block{
+		width: 300px;
+	}
+
+	.block img{
+		width: 100%;
+	}
+
 	img{
-		width: 100%;	}
+		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 48px;
+		height: 48px;
+	}
 
 	h3{
 		margin: 0;
@@ -694,7 +841,13 @@ i.fa-envelope:hover{
 	}
 
 	img{
-		width: 100%;	}
+		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 48px;
+		height: 48px;
+	}
 
 	h3{
 		margin: 0;
@@ -793,7 +946,13 @@ i.fa-envelope:hover{
 	}
 
 	img{
-		width: 100%;	}
+		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 48px;
+		height: 48px;
+	}
 
 	h3{
 		margin: 0;
@@ -897,7 +1056,13 @@ i.fa-envelope:hover{
 	}
 
 	img{
-		width: 100%;	}
+		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 40px;
+		height: 40px;
+	}
 
 	h3{
 		margin: 0;
@@ -958,16 +1123,17 @@ i.fa-envelope:hover{
 	
 	.header_title{
 		font-size: 46px;
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 
 	.header_slogan{
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 70px;
+		margin-top: 10px;
 		margin-left: 10px;
 		margin-right: 10px;
+		margin-bottom: 0px;
 		letter-spacing: 1.3px;
 	}
 
@@ -1007,6 +1173,16 @@ i.fa-envelope:hover{
 	
 	.block{
 		max-width: 180px;
+	}
+
+	.block p{
+		font-size: 12px;
+	}
+
+
+	img.howWeWork{
+		width: 26px;
+		height: 26px;
 	}
 
 	h3{
@@ -1069,7 +1245,7 @@ i.fa-envelope:hover{
 	
 	.header_title{
 		font-size: 46px;
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 
 	.header_slogan{
@@ -1077,6 +1253,7 @@ i.fa-envelope:hover{
 		line-height: 1.5;
 		letter-spacing: 1.3px;
 		margin-top: 30px;
+		margin-bottom: 0;
 	}
 
 	.header_arrow{
@@ -1110,12 +1287,15 @@ i.fa-envelope:hover{
 		padding-bottom: 10px;
 	}
 
-	.block{
-		max-width: 200px;
+	img{
+		width: 100%;
 	}
 
-	img{
-		width: 100%;	}
+
+	img.howWeWork{
+		width: 26px;
+		height: 26px;
+	}
 
 	h3{
 		margin: 0;
@@ -1147,7 +1327,7 @@ i.fa-envelope:hover{
 	}
 	
 	.button{
-		font-size: 27px;
+		font-size: 16px;
 	}
 }
 
@@ -1217,11 +1397,16 @@ i.fa-envelope:hover{
 	}
 
 	.block{
-		max-width: 240px;
+		max-width: 330px;
 	}
 
 	img{
 		width: 100%;
+	}
+
+	img.howWeWork{
+		width: 26px;
+		height: 26px;
 	}
 
 	h3{
@@ -1230,7 +1415,7 @@ i.fa-envelope:hover{
 
 
 	#tabs_1, #tabs_2{
-		max-width: 360px;
+		max-width: 500px;
 	}
 	
 	
@@ -1254,11 +1439,8 @@ i.fa-envelope:hover{
 	}
 	
 	.button{
-		font-size: 26px;
+		font-size: 16px;
 	}
-	
-
-
 }
 
 

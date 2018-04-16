@@ -106,7 +106,12 @@
 							<img src="img/about_us.jpg" alt="">
 							<h3>О нас</h3>
 						</a>
-						<div id="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aut fugit corrupti atque maiores magnam corporis sed pariatur doloremque nisi quibusdam, quaerat nemo aliquid laboriosam ratione et asperiores molestias eos.</div>
+						<div id="hidden">
+							<p>Мы занимаемся созданием любимой мебели с 2012 года. За эти годы было сделано  множество заказов, выпито пять цистерн кофе и произнесены тысячи не очень хороших слов. Мы спали по несколько часов, ели недоваренные пельмени и много-много работали.</p>
+						 	<p>Мы изучаем множество рейтингов, отзывов, читаем горы литературы за чаем и кофе со всевозможными лакомствами (даже за обедом мы продолжаем читать).</p>
+						 	<p>Ведя такой образ жизни, мы накопили достаточно опыта в этой сфере и хотим поделиться им. Это значит, что, позвонив нам, не нужно продираться через дебри сомнительных товаров, выискивая что-то стоящее. Заказывая нашу мебель, можно быть уверенным – это хороший выбор! А так как читать, слушать и кушать мы не прекратим, то и не пропустим новинок, достойных внимания.</p>
+						 	<p>Спасибо, что вы с нами!</p>
+						</div>
 					</div>
 				</div>
 				<!-- // block 1-->
@@ -114,31 +119,62 @@
 				<!-- block 2-->
 				<div class="flex-element">
 					<div class="block">
-						<a data-fancybox="gallery02" href="img/000.jpg">
-							<img src="img/palitra_tsvetov.jpg" alt="">
-							<h3>Палитра цветов</h3>
+						<a class="hider3">
+							<img src="img/about_us1.jpg" alt="">
+							<h3>Как мы работаем</h3>
 						</a>
-						<a data-fancybox="gallery02" href="img/001.jpg"></a>
-						<a data-fancybox="gallery02" href="img/002.jpg"></a>
-						<a data-fancybox="gallery02" href="img/003.jpg"></a>
-						<a data-fancybox="gallery02" href="img/004.jpg"></a>
-						<a data-fancybox="gallery02" href="img/005.jpg"></a>
-						<a data-fancybox="gallery02" href="img/006.jpg"></a>
+						<div id="hidden3">
+							<ol>
+								<li>Оставляете заявку.<img src="img/icons/call.png" class="howWeWork" alt=""></li>
+								<li>Выезжаем на замер.<img src="img/icons/scale.png" class="howWeWork" alt=""></li>
+								<li>Согласовываем проект. <img src="img/icons/project.png" class="howWeWork" alt=""></li>
+								<li>Изготавливаем заказ. <img src="img/icons/prepare.png" class="howWeWork" alt=""></li>
+								<li>Привозим и собираем. <img src="img/icons/delivery.png" class="howWeWork" alt=""></li>
+								<li>Все стороны довольны. <img src="img/icons/done.png" class="howWeWork" alt=""></li>
+							</ol>
+						</div>
+						
 					</div>
 				</div>
 				<!-- // block 2-->
 
 				<!-- block 3-->
+				
 				<div class="flex-element">
 					<div class="block">
-						<a class="hider3">
-							<img src="img/about_us1.jpg" alt="">
-							<h3>Как мы работаем</h3>
-						</a>
-						<div id="hidden3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus totam libero id odio suscipit sapiente blanditiis mollitia incidunt repellendus, excepturi adipisci commodi ut, ab doloremque animi! Rerum suscipit facilis blanditiis.</div>
-						
+						<form class="zakazZamer"  action="formdata.php" method="POST" name="form">
+							<h4>Заказать замер</h4>
+
+							<div class="mat-div">
+								<label for="name" class="mat-label">Ваше Имя:*</label>
+								<input type="text" required maxlength="15" id="name" class="mat-input">
+							</div>
+							<div class="mat-div">
+								<label for="tel" class="mat-label">Ваш телефон:*</label>
+								<input type="tel" required id="tel" class="mat-input">
+							</div>
+							<input type="submit" class="buttonForm" value="Заказать">
+							<input type="reset" class="buttonForm" value="Сброс">
+						</form>
 					</div>
 				</div>
+
+
+
+		<!--  <div class="flex-element">
+					<div class="block">
+						<form class="zakazZamer"  action="formdata.php" method="POST" name="form">
+							<h4>Заказать замер</h4>
+							<p><label for="name">Ваше Имя:*</label></p>
+							<input type="text" required maxlength="15" placeholder="Меня зовут ..." id="name"> 
+							<p><label for="tel">Ваш телефон:*</label></p>
+							<input type="tel" required placeholder="+380__-___-__-__" id="tel">
+							<input type="submit" value="Отправить">
+							<input type="reset">
+						</form>
+					</div>
+				</div>  -->
+
 				<!-- // block 3-->
 			</div>
 		</div>
@@ -201,7 +237,7 @@
 					  <ul class="link">
 					    <li class="tabs_1"><a href="#tabs-1">Кровати</a></li>
 					    <li><a href="#tabs-2">Тумбы</a></li>
-					    <li><a href="#tabs-3">Цвета</a></li>
+					    <li><a href="#tabs-3">Декор</a></li>
 					  </ul>
 					  <div id="tabs-1">
 					   <a data-fancybox="gallery_3" href="img/mebel/301.jpg"><img src="img/mebel/301-s.jpg"></a>
@@ -222,14 +258,14 @@
 						<a data-fancybox="gallery_4" href="img/mebel/408.jpg"><img src="img/mebel/408-s.jpg"></a>
 					  </div>
 					  <div id="tabs-3">
-					    <a data-fancybox="gallery_5" href="img/000.jpg"><img src="img/000-s.jpg"></a>
-					  	<a data-fancybox="gallery_5" href="img/001.jpg"><img src="img/001-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/002.jpg"><img src="img/002-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/003.jpg"><img src="img/003-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/004.jpg"><img src="img/004-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/005.jpg"><img src="img/005-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/006.jpg"><img src="img/006-s.jpg"></a>
-						<a data-fancybox="gallery_5" href="img/007.jpg"><img src="img/007-s.jpg"></a>
+					    <a data-fancybox="gallery_5" href="img/mebel/501.jpg"><img src="img/mebel/501-s.jpg"></a>
+					  	<a data-fancybox="gallery_5" href="img/mebel/502.jpg"><img src="img/mebel/502-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/503.jpg"><img src="img/mebel/503-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/504.jpg"><img src="img/mebel/504-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/505.jpg"><img src="img/mebel/505-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/506.jpg"><img src="img/mebel/506-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/507.jpg"><img src="img/mebel/507-s.jpg"></a>
+						<a data-fancybox="gallery_5" href="img/mebel/508.jpg"><img src="img/mebel/508-s.jpg"></a>
 					  </div>
 					</div>
 					<a href="#" class="scrollup"><i class="fa fa-angle-double-up" aria-hidden="false"></i></a>
