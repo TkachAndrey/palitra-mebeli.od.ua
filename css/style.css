@@ -42,13 +42,13 @@ html, body{
 
 .logo{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 10px;
+	left: 10px;
 }
 
 .logo img{
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 }
 
 .menu{
@@ -83,7 +83,7 @@ html, body{
 	font: 56px/62px Merriweather, serif;
 	font-weight: 400;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .header_slogan{
@@ -108,6 +108,10 @@ html, body{
 	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+.header .button{
+	margin-top:50px;
 }
 
 /********* Rainbow colors for Title ************/
@@ -240,7 +244,7 @@ html, body{
 	line-height: normal;
 }
 
-#hidden, #hidden2, #hidden3{
+#hidden, #hidden2{
 	display: none;
 }
 
@@ -251,13 +255,13 @@ html, body{
 	padding-right: 7px;
 }
 
-#hidden3 ol li{
+#hidden2 ol li{
 	text-align: left;
 	position: relative;
 	margin-bottom: 20px;
 }
 
-#hidden3 ol li img{
+#hidden2 ol li img{
 	position: absolute;
 	right: 5px;
 	width: 30px;
@@ -536,10 +540,15 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		width: 40px;
-		height: 60px;
-		margin-left: 5px;
+		top: 5px;
+		left: 5px;
 	}
+
+	.logo img{
+		width: 80px;
+		height: 80px;
+	}
+
 	.menu{
 		flex-direction: column;
 		align-items: center;
@@ -551,7 +560,8 @@ i.fa-envelope:hover{
 	
 	.header_title{
 		font-size: 36px;
-		margin-top: -20px;
+		margin-top: 0px;
+		margin-bottom: 0;
 	}
 
 	.header_slogan{
@@ -559,7 +569,7 @@ i.fa-envelope:hover{
 		font-weight: 400;
 		line-height: 1.5;
 		text-align: center;
-		margin-top: 50px;
+		margin-top: 0px;
 		letter-spacing: 1.6px;
 	}
 
@@ -571,6 +581,13 @@ i.fa-envelope:hover{
 		width: 20px;
 		height: 25px;
 		margin-left: -10px;
+	}
+
+	.header .button{
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 
 	.title{
@@ -609,8 +626,8 @@ i.fa-envelope:hover{
 		width:20px;
 		height:25px;
 		position:fixed;
-		bottom:30px;
-		right:30px;
+		bottom:10px;
+		right:10px;
 		font-size: 26px;
 	}
 
@@ -626,8 +643,9 @@ i.fa-envelope:hover{
 		margin-right: 0;
 	}
 	
-	.button{
+	.footer .button{
 		font-size: 16px;
+		margin-top: 5px;
 	}
 }
 
@@ -643,10 +661,13 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
+		top: 5px;
+		left: 5px;
+	}
+
+	.logo img{
 		width: 60px;
-		height: 90px;
-		margin-left: 5px;
-		margin-top: 5px;
+		height: 60px;
 	}
 
 	.menu{
@@ -655,7 +676,7 @@ i.fa-envelope:hover{
 	}
 	
 	.menu li a{
-		font-size: 16px;
+		font-size: 12px;
 	}
 	
 	.header_title{
@@ -671,6 +692,13 @@ i.fa-envelope:hover{
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
+	}
+
+	.header .button{
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 
 	.header_arrow{
@@ -734,6 +762,7 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 45px;
+		margin-top: 20px;
 		font-size: 36px;
 	}
 
@@ -741,8 +770,13 @@ i.fa-envelope:hover{
 		margin-right: 0;
 	}
 
+	.address{
+		margin-top: 20px;
+	}
+
 	.button{
-		font-size: 12px;
+		font-size: 16px;
+		margin-top: 20px;
 	}
 
 }
@@ -758,9 +792,12 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 5px;
-		margin-top: 5px;
-		width: 60px;
+		top: 5px;
+		left: 5px;
+	}
+
+	.logo img{
+		width: 80px;
 		height: 80px;
 	}
 
@@ -770,22 +807,29 @@ i.fa-envelope:hover{
 	}
 	
 	.menu li a{
-		font-size: 16px;
+		font-size: 12px;
 	}
 	
 	.header_title{
-		font-size: 48px;
-		margin-top: 30px;
+		font-size: 36px;
+		margin-top: 10px;
 	}
 
 	.header_slogan{
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 70px;
+		margin-top: 30px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
+	}
+
+	.header .button{
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 12px;
 	}
 
 	.header_arrow{
@@ -802,8 +846,8 @@ i.fa-envelope:hover{
 		width: 30px;
 		height: 30px;
 		position: fixed;
-		bottom: 30px;
-		right: 30px;
+		bottom: 10px;
+		right: 10px;
 		font-size: 36px;
 	}
 
@@ -841,15 +885,22 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 45px;
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 20px;
+	}
 	
 	.button{
-		font-size: 18px;
+		margin-top: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 }
 
@@ -864,8 +915,13 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 5px;
-		margin-top: 5px;
+		top: 15px;
+		left: 15px;
+	}
+
+	.logo img{
+		width: 80px;
+		height: 80px;
 	}
 	
 	.menu{
@@ -875,26 +931,33 @@ i.fa-envelope:hover{
 
 
 	.menu li a{
-		font-size: 22px;
+		font-size: 16px;
 	}
 	
 	.header_title{
-		font-size: 52px;
-		margin-top: 30px;
+		font-size: 36px;
+		margin-top: 10px;
 	}
 
 	.header_slogan{
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 40px;
+		margin-top: 20px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
 	}
 
+	.header .button{
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
+	}
+
 	.header_arrow{
-		font-size: 46px;
+		font-size: 36px;
 		position: absolute;
 		bottom: 30px;
 		left: 50%;
@@ -909,7 +972,7 @@ i.fa-envelope:hover{
 		position: fixed;
 		bottom: 30px;
 		right: 30px;
-		font-size: 46px;
+		font-size: 36px;
 	}
 
 	.title{
@@ -927,11 +990,6 @@ i.fa-envelope:hover{
 		width: 100%;
 	}
 
-	img.howWeWork{
-		width: 48px;
-		height: 48px;
-	}
-
 	h3{
 		margin: 0;
 	}
@@ -946,15 +1004,22 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 45px;
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 20px;
+	}
 	
 	.button{
-		font-size: 18px;
+		margin-top: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 }
 
@@ -968,10 +1033,13 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 5px;
-		margin-top: 5px;
-		width: 40px;
-		height: 40px;
+		top: 15px;
+		left: 15px;
+	}
+
+	.logo img{
+		width: 60px;
+		height: 60px;
 	}
 	
 	.menu{
@@ -997,6 +1065,13 @@ i.fa-envelope:hover{
 		margin-right: 10px;
 		letter-spacing: 1.3px;
 		margin-bottom: 0;
+	}
+
+	.header .button{
+		margin-top: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 12px;
 	}
 
 	.header_arrow{
@@ -1033,13 +1108,30 @@ i.fa-envelope:hover{
 		max-width: 250px;
 	}
 
-	img{
-		width: 100%;
+	#hidden p{
+		text-align: justify;
+		text-indent: 1em;
+		padding-left: 7px;
+		padding-right: 7px;
+		font-size: 12px;
 	}
 
-	img.howWeWork{
-		width: 40px;
-		height: 40px;
+	#hidden2 ol li{
+		font-size: 12px;
+		text-align: left;
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	#hidden3 ol li img{
+		position: absolute;
+		right: 5px;
+		width: 10px;
+		height: 10px;
+	}
+
+	img{
+		width: 100%;
 	}
 
 	h3{
@@ -1060,15 +1152,22 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 45px;
-		font-size: 50px;
+		font-size: 36px;
 	}
 
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 20px;
+	}
 	
 	.button{
-		font-size: 12px;
+		margin-top: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 }
 
@@ -1083,9 +1182,12 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 5px;
-		margin-top: 5px;
-		width: 60px;
+		top: 15px;
+		left: 15px;
+	}
+
+	.logo img{
+		width: 80px;
 		height: 80px;
 	}
 	
@@ -1096,11 +1198,11 @@ i.fa-envelope:hover{
 
 
 	.menu li a{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	
 	.header_title{
-		font-size: 46px;
+		font-size: 36px;
 		margin-top: 10px;
 	}
 
@@ -1113,6 +1215,13 @@ i.fa-envelope:hover{
 		margin-right: 10px;
 		margin-bottom: 0px;
 		letter-spacing: 1.3px;
+	}
+
+	.header .button{
+		margin-top: 40px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 
 	.header_arrow{
@@ -1129,13 +1238,13 @@ i.fa-envelope:hover{
 		width: 30px;
 		height: 30px;
 		position: fixed;
-		bottom: 30px;
-		right: 30px;
+		bottom: 20px;
+		right: 20px;
 		font-size: 26px;
 	}
 
 	.title{
-		font-size: 36px;
+		font-size: 27px;
 		font-weight: 400;
 		margin-bottom: 25px;
 	}
@@ -1165,7 +1274,34 @@ i.fa-envelope:hover{
 
 	h3{
 		margin: 0;
-		font-size:18px !important;
+		font-size: 16px !important;
+	}
+
+	#hidden2 ol li{
+		text-align: left;
+		position: relative;
+		margin-bottom: 10px;
+		font-size: 12px;
+
+	}
+
+	#hidden2 ol li img{
+		position: absolute;
+		right: 5px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.zakazZamer h4{
+		font-size: 16px !important;
+	}
+
+	.mat-label{
+		font-size: 14px;
+	}
+
+	.buttonForm{
+		font-size: 12px;
 	}
 	
 	#tabs_1, #tabs_2{
@@ -1182,15 +1318,22 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 55px;
-		font-size: 50px;
+		font-size: 45px;
 	}
 
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 20px;
+	}
 	
 	.button{
-		font-size: 18px;
+		margin-top: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
 	}
 }
 
@@ -1205,9 +1348,12 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 5px;
-		margin-top: 5px;
-		width: 60px;
+		top: 15px;
+		left: 15px;
+	}
+
+	.logo img{
+		width: 80px;
 		height: 80px;
 	}
 	
@@ -1216,13 +1362,12 @@ i.fa-envelope:hover{
 		align-items: center;
 	}	
 
-
 	.menu li a{
-		font-size: 18px;
+		font-size: 14px;
 	}
 	
 	.header_title{
-		font-size: 46px;
+		font-size: 36px;
 		margin-top: 10px;
 	}
 
@@ -1269,15 +1414,9 @@ i.fa-envelope:hover{
 		width: 100%;
 	}
 
-
-	img.howWeWork{
-		width: 26px;
-		height: 26px;
-	}
-
 	h3{
 		margin: 0;
-		font-size: 18px !important;
+		font-size: 24px !important;
 	}
 	
 	#tabs_1, #tabs_2{
@@ -1296,15 +1435,22 @@ i.fa-envelope:hover{
 
 	.footer_social_icons a{
 		margin-right: 45px;
-		font-size: 60px;
+		font-size: 40px;
 		flex-direction: row;
 	}
 
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 20px;
+	}
 	
 	.button{
+		margin-top: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		font-size: 16px;
 	}
 }
@@ -1317,12 +1463,18 @@ i.fa-envelope:hover{
 	}
 
 	.logo{
-		margin-left: 10px;
-		margin-top: 0px;
+		top: 15px;
+		left: 25px;
+	}
+
+	.logo img{
+		width: 100px;
+		height: 100px;
 	}
 	
 	.menu{
 		margin-left: 40px;
+		margin-top: 20px;
 	}
 
 	.menu li a{
@@ -1330,17 +1482,24 @@ i.fa-envelope:hover{
 	}
 	
 	.header_title{
-		font-size: 65px;
-		margin-top: 60px;
+		font-size: 60px;
+		margin-top: 70px;
 	}
 
 	.header_slogan{
-		font-size: 36px;
+		font-size: 30px;
 		line-height: 1.5;
 		margin-top: 70px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
+	}
+
+	.header .button{
+		margin-top: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 27px;
 	}
 
 	.header_arrow{
@@ -1388,7 +1547,8 @@ i.fa-envelope:hover{
 	}
 
 	h3{
-		margin: 0;
+		margin-top: 41px;
+		font-size: 26px !important;
 	}
 
 
@@ -1415,9 +1575,16 @@ i.fa-envelope:hover{
 	.footer_social_icons a:last-child{
 		margin-right: 0;
 	}
+
+	.address{
+		margin-top: 30px;
+	}
 	
 	.button{
-		font-size: 16px;
+		margin-top: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 18px;
 	}
 }
 
