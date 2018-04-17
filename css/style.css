@@ -251,10 +251,18 @@ html, body{
 	padding-right: 7px;
 }
 
-#hidden3 ol{
+#hidden3 ol li{
 	text-align: left;
+	position: relative;
+	margin-bottom: 20px;
 }
 
+#hidden3 ol li img{
+	position: absolute;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+}
 
 	/* form */
 form{
@@ -271,38 +279,6 @@ form h4{
 	margin-top: 10px;
 }
 
-
-/*
-form p{
-	margin-top: 0px;
-}
-
-form input[type=text]{
-	width: 200px;
-	height: 30px;
-	margin-bottom: 10px;
-	background: #d8c5aa;
-}
-
-form input[type=tel]{
-	width: 200px;
-	height: 30px;
-	margin-bottom: 30px;
-	background: #d8c5aa;
-}
-
-form input[type=submit], form input[type=reset]{
-	width: 200px;
-	height: 30px;
-	margin-bottom: 30px;
-	color: #fff;
-	background: linear-gradient(to top, #d8c5aa, #847162);
-}
-
-form input[type=submit]:hover, form input[type=reset]:hover{
-	background: linear-gradient(to top,#5c483f, #d8c5aa );
-}
-	form */
 
 .mat-label {
   display: block;
@@ -371,6 +347,8 @@ form input[type=submit]:hover, form input[type=reset]:hover{
 .buttonForm:hover {
   background: linear-gradient(to top, #847162, #d8c5aa);
 }
+
+	/* form */
 
 		/*END OF MAIN BLOCK*/
 
