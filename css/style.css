@@ -685,18 +685,19 @@ i.fa-envelope{
 	
 	.menu li a{
 		font-size: 12px;
+		padding-bottom: 0;
 	}
 	
 	.header_title{
-		font-size: 36px;
+		font-size: 33px;
 		margin-top: 0px;
 	}
 
 	.header_slogan{
-		font-size: 16px;
+		font-size: 12px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
@@ -706,7 +707,7 @@ i.fa-envelope{
 		margin-top: 0;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	.header_arrow{
@@ -717,6 +718,15 @@ i.fa-envelope{
 		width: 20px;
 		height: 25px;
 		margin-left: -10px;
+	}
+
+	.scrollup{
+		width:20px;
+		height:25px;
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		font-size: 32px;
 	}
 
 	.title{
@@ -742,11 +752,6 @@ i.fa-envelope{
 		width: 100%;
 	}
 
-	img.howWeWork{
-		width: 48px;
-		height: 48px;
-	}
-
 	h3{
 		margin: 0;
 	}
@@ -755,17 +760,9 @@ i.fa-envelope{
 		max-width: 310px;
 	}
 
-	.scrollup{
-		width:20px;
-		height:25px;
-		position:fixed;
-		bottom:30px;
-		right:30px;
-		font-size: 32px;
-	}
-
 	.footer_social_icons{
-		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	.footer_social_icons a{
@@ -785,6 +782,9 @@ i.fa-envelope{
 	.button{
 		font-size: 16px;
 		margin-top: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 12px;
 	}
 
 }
@@ -817,17 +817,17 @@ i.fa-envelope{
 	.menu li a{
 		font-size: 12px;
 	}
-	
+
 	.header_title{
-		font-size: 36px;
-		margin-top: 10px;
+		font-size: 43px;
+		margin-top: 0px;
 	}
 
 	.header_slogan{
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 400;
 		line-height: 1.5;
-		margin-top: 30px;
+		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		letter-spacing: 1.3px;
@@ -837,8 +837,8 @@ i.fa-envelope{
 		margin-top: 0;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-size: 12px;
 	}
+		
 
 	.header_arrow{
 		font-size: 36px;
@@ -889,6 +889,8 @@ i.fa-envelope{
 
 	.footer_social_icons{
 		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.footer_social_icons a{
