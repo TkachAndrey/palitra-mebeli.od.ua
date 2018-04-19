@@ -105,7 +105,7 @@
 							<h3>Кто мы&nbsp&nbsp<i class="fas fa-caret-down"></i></h3>
 						</a>
 						<div id="hidden">
-							<p>Мы занимаемся созданием любимой мебели с 2012 года. За эти годы было сделано  множество заказов и выпито много кофе. Мы спали по несколько часов и много-много работали.</p>
+							<p>Мы занимаемся созданием мебели с 2012 года. За эти годы было сделано  множество заказов и выпито много кофе. Мы спали по несколько часов и много-много работали.</p>
 						 	<p>Мы изучаем новинки, читаем горы литературы за чаем и кофе (даже за обедом мы продолжаем читать).</p>
 						 	<p>Ведя такой образ жизни, мы накопили достаточно опыта в этой сфере и хотим поделиться им. Это значит, что, заказывая нашу мебель, можно быть уверенным – это хороший выбор! А так как читать и изучать мы не прекратим, то и не пропустим новинок, достойных внимания.</p>
 						 	<p>Спасибо, что вы с нами!</p>
@@ -139,19 +139,22 @@
 				<!-- block 3-->
 				<div class="flex-element">
 					<div class="block">
-						<form class="zakazZamer"  action="formdata.php" method="POST" name="form">
+						<form class="zakazZamer"  action="formdata.php" method="POST" name="form" id="form">
 							<h4>Заказать замер</h4>
 
 							<div class="mat-div">
 								<label for="name" class="mat-label">Ваше Имя:*</label>
-								<input type="text" required maxlength="15" id="name" class="mat-input">
+								<input type="text" required pattern="^[a-zA-Zа-яА-Я]+$" maxlength="15" class="mat-input" name="name" id="name">
 							</div>
 							<div class="mat-div">
-								<label for="tel" class="mat-label">Ваш телефон:*</label>
-								<input type="tel" required id="tel" class="mat-input">
+								<label for="tel" class="mat-label">Ваш Телефон:*</label>
+								<input type="tel" placeholder="380..." required pattern="380[0-9]{9}"  minlength="12" maxlength="12" class="mat-input" name="tel" id="tel">
 							</div>
+							<input name="bezspama" type="text" style="display: none" value="" />
 							<input type="submit" class="buttonForm" value="Заказать">
 							<input type="reset" class="buttonForm" value="Сброс">
+							<img id="load" src="img/icons/load.gif" style="display: none;" />
+							<div id="answer"></div>
 						</form>
 					</div>
 				</div>
