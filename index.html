@@ -144,16 +144,16 @@
 
 							<div class="mat-div">
 								<label for="name" class="mat-label">Ваше Имя:*</label>
-								<input type="text" required pattern="^[a-zA-Zа-яА-Я]+$" maxlength="15" class="mat-input" name="name" id="name">
+								<input type="text" required pattern="^[a-zA-Zа-яА-Я]+$" maxlength="15" class="mat-input" name="name" id="name" autocomplete="off">
 							</div>
 							<div class="mat-div">
 								<label for="tel" class="mat-label">Ваш Телефон:*</label>
-								<input type="tel" placeholder="380..." required pattern="380[0-9]{9}"  minlength="12" maxlength="12" class="mat-input" name="tel" id="tel">
+								<input type="tel" placeholder="380..." required pattern="380[0-9]{9}"  minlength="12" maxlength="12" class="mat-input" name="tel" id="tel"  autocomplete="off">
 							</div>
 							<input name="bezspama" type="text" style="display: none" value="" />
 							<input type="submit" class="buttonForm" value="Заказать">
 							<input type="reset" class="buttonForm" value="Сброс">
-							<img id="load" src="img/icons/load.gif" style="display: none;" />
+							<img id="load" src="img/icons/load.gif"/>
 							<div id="answer"></div>
 						</form>
 					</div>

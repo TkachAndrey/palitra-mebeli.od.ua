@@ -356,6 +356,16 @@ form h4{
   background: linear-gradient(to top, #847162, #d8c5aa);
 }
 
+form img#load{
+	display: none;
+	width: 25px;
+	height: 25px;
+}
+
+#afterForm{
+	background-image: url(../img/afterForm.gif);
+}
+
 	/* form */
 
 		/*END OF MAIN BLOCK*/
